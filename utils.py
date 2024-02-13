@@ -2,7 +2,7 @@ def Fact2(n):
     if n == 1 or n == 0:
         return 1
     else:
-        return n * Fact(n - 1)
+        return n * Fact2(n - 1)
 
 from math import ceil
 def prost2(n):
@@ -12,3 +12,10 @@ def prost2(n):
             return "не просте"
         i = i + 1
     return "просте"
+def FiveDegree2(x):
+    if x == 1:
+        return "Число є степенем п'ятірки"
+    if x != int(x):
+        return "Число не є степенем п'ятірки"
+    else:
+        return FiveDegree2(x / 5)
