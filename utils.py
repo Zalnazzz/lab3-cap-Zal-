@@ -12,6 +12,7 @@ def prost2(n):
             return "не просте"
         i = i + 1
     return "просте"
+
 def FiveDegree2(x):
     if x == 1:
         return "Число є степенем п'ятірки"
